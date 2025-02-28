@@ -17,3 +17,7 @@ Funcționalități
 7. Adăugare Text: Utilizatorii pot adăuga text pe imagine.
 8. Afișare Histogramă: Afișează o histogramă de culoare pentru selecția curentă.
 9. Ștergere Selecție: Utilizatorii pot șterge selecția, transformând pixelii în alb.
+
+Cum să Rulezi Proiectul
+Clonează repository-ul:
+Deschide fișierul 4_1092_BUDIA_IULIANA.html într-un browser web.
