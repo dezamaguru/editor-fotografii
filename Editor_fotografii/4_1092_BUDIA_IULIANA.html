@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Artify</title>
+    <link rel="stylesheet" type="text/css" href="4_1092_BUDIA_Iuliana.css">
+    <script src="4_1092_BUDIA_Iuliana.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="media/artify_icon.png" alt="artify_icon" />
+        <h1>Aritfy</h1>
+        
+        <input id="openImage" name="openImage" type="file" accept="image/*" />
+        <label id="openImageBtn" for="openImage" >Open Image</label>
+
+        
+        <button id="downloadBtn">Download</button>
+    </div>
+
+    <main>
+        <div id="sideDiv">
+
+            <input id="select" name="select" type="image" src="media/select_icon.png" alt="select">
+            <label for="select">Select</label>
+
+            <input id="crop" name="crop" type="image" src="media/crop_icon.png" alt="crop">
+            <label for="crop">Crop</label>
+
+            <input id="efect" name="efect" type="image" src="media/efect_icon.png" alt="efects">
+            <label for="efect">Efects</label>
+
+            <select id="effectSelect">
+                <option value="grayscale">Grayscale</option>
+                <option value="invert">Invert</option>
+                <option value="brightness">Increase Brightness</option>
+            </select>
+
+            <input id="scale" name="scale" type="image" src="media/scale_icon.png" alt="scale">
+            <label for="scale">Scale</label>
+
+            <input id="text" name="text" type="image" src="media/text_icon.png" alt="text">
+            <label for="text">Text</label>
+
+
+            <input id="delete" name="delete" type="image" src="media/delete_icon.png" alt="delete">
+            <label for="delete">Delete</label>
+        </div>
+
+        <div id="canvasDiv">
+            <canvas id="canvasImagine">
+            </canvas>
+        </div>
+
+        <div id="histogramDiv">
+            <canvas id="histogramCanvas" width="256" height="100"></canvas>
+        </div>
+
+        <div id="effectsMenu" style="display: none;">
+            <select id="effectSelect">
+                <option value="grayscale">Grayscale</option>
+                <option value="invert">Invert</option>
+                <option value="brightness">Increase Brightness</option>
+                <option value="blur">Blur</option>
+            </select>
+            <button id="applyEffect">Apply Effect</button>
+        </div>
+
+    </main>
+
+
+</body>
+</html>
